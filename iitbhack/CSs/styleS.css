@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    
+
+}
+.jumbotron{
+    background-image: url('../images/hack.jpg') ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 0px!important;
+}
+
+
+.jumbotron img{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    
+}
+.presenter{
+    font-weight: 800;
+    font-size: 50px;
+}
+.titl{
+    font-weight: 800;
+    font-size: 100px;
+}
+@media(max-width:1028px){
+    .jumbotron img{
+        width: 100px;
+        height: 50px;
+       position: absolute;
+       left: 10px;
+       top: 0px;
+    }
+    .presenter{
+        font-weight: 600;
+        font-size: 40px;
+    }
+    .titl{
+        font-weight: 500;
+        font-size: 50px;
+        position: relative;
+        bottom: 10px;
+        
+    }
+}
+.inimg{
+    height: 200px;
+    width: 200px;
+    
+}
+.feature-box{
+    text-align: center;
+    padding: 5% ;
+  }
+  #incentives{
+      background-color: rgb(110, 168, 165);
+      
+      
+  }
+  .hr1{
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      padding : 0;
+      margin: 0;
+      position: relative;
+      bottom: 30px;
+  }
+  .hr2{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    padding : 0;
+    margin: 0;
+   
+}
+.quote1{
+    /* color: white; */
+   font-family: cursive;
+}
+/* body{
+    background-color: black;
+} */
+.aboutprog{
+    margin-left:10px;
+    margin-right: 10px;
+}
+.abtimg{
+    height: 400px;
+    width: 400px;
+}
+#about{
+    background-color: coral;
+}
+
+  
+
+
