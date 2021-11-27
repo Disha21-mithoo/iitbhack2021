@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I_HACK</title>
+        <link rel="icon" href="https://ecell.in/esummit/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSs\styleS.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!--fontawesome cdn-->
+        <script src="https://kit.fontawesome.com/f21928e3a0.js" crossorigin="anonymous"></script>
+
+       
+    </head>
+    <body>
+
+
+
+      <!--navbar start-->
+      <div id="mydiv">
+        <div id="mydivheader"> <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">NAVIGATION(have fun dragging me!)</button></div>
+  <div id="demo" class="collapse">
+   
+    <a class="navopt" href="#introduction">HOME</a><br>
+    <a class="navopt" href="#incentives">INCENTIVES</a><br>
+    <a class="navopt" href="#about">ABOUT</a><br>
+    <a class="navopt" href="#cry">CRITERIA</a><br>
+    <a class="navopt" href="#sponsors">SPONSORS</a><br>
+    <a class="navopt" href="#timeline">TIMELINE</a><br>
+    <a class="navopt" href="#FAQS">FAQ</a><br>
+    <a class="navopt" href="#footer">CONTACT</a>
+</div>
+
+      
+        
+       
+       
+      </div>
+    </div>
+
+      <script>
+        //Make the DIV element draggagle:
+        dragElement(document.getElementById("mydiv"));
+        
+        function dragElement(elmnt) {
+          var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+          if (document.getElementById(elmnt.id + "header")) {
+            /* if present, the header is where you move the DIV from:*/
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+          } else {
+            /* otherwise, move the DIV from anywhere inside the DIV:*/
+            elmnt.onmousedown = dragMouseDown;
+          }
+        
+          function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+          }
+        
+          function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+          }
+        
+          function closeDragElement() {
+            /* stop moving when mouse button is released:*/
+            document.onmouseup = null;
+            document.onmousemove = null;
+          }
+        }
+        </script>
+
+
+
+      <!---navbar end-->
+        
+        <section id="introduction">
+        <div class="jumbotron text-center">
+            <img src="images/Esummit_logo4.png">
+            
+            <div class="intro">
+                
+                <h1 class="presenter"> E-CELL IIT BOMBAY</h1>
+                <BR>
+                <BR>
+                <h2>PRESENTS</h2>
+                <BR>
+                <BR>
+                 <br> 
+                <i class="fas fa-eye fa-6x"></i>
+                <br>
+                <h1 class="titl">i-HACK</h1>
+
+                    
+               
+            </div>
+        </section> 
+          
+        <p class="text-center quote1"><b>“Winning has a value for ego, but participation has value for life.”</b> ― Debasish Mridha</p>
+          
+
+        <section id="incentives">
+          <br>
+            
+            <H1 class="text-center"> WHY PARTICIPATE?</H1>
+            <h5 class="text-center">NATIONAL LEVEL HACKATHON</h5>
+            <div class="row text-center">
+                
+                <div class="col-lg-4 feature-box">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="inimg" src="images/inspireimg.png" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="inimg" src="images/inspireimg2.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="inimg" src="images/inspireimg3.jpg" alt="Third slide">
+                          </div>
+                        </div>
+                      </div>
+                <!-- <img class="inimg" src="images/inspireimg.png"> -->
+                  <h3>Get Inspired</h3>
+            <p>Code with the best 500+ developers and designers from all around the country.</p>
+                </div>
+                <div class="col-lg-4 feature-box">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="inimg" src="images/rupeeimg.png" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="inimg" src="images/rupeeimg2.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="inimg" src="images/rupeeimg3.jpg" alt="Third slide">
+                          </div>
+                        </div>
+                      </div>
+
+                <!-- <img class="inimg" src="images/rupeeimg.png"> -->
+                    
+                  <h3>INR 2 Lakhs</h3>
+            <p>Worth prizes at stake.</p>
+                </div>
+                <div class="col-lg-4 feature-box">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="inimg" src="images/insightimg.png" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="inimg" src="images/insightimg2.png" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="inimg" src="images/insightimg3.png" alt="Third slide">
+                          </div>
+                        </div>
+                      </div>
+                    <!-- <img class="inimg" src="images/insightimg.png"> -->
+                  <h3>Free Tech Insights</h3>
+            <p>Get priceless insights from eminent speakers and mentors from one of the leading companies and startups in the space.</p>
+                </div>
+               
+            </div>
+        </section>
+     
+       <br> 
+      <p class="text-center quote1"><b>“knowledge is power, but enthusiasm pulls the switch.”</b> ― Ivern Ball</p>
+        <section id="about">
+
+        
+
+            <br>
+            <H1 class="text-center"> ABOUT THE HACKATHON</H1>
+            <p class="text-center aboutprog">At I_Hack 2021, we bring together India’s best coders, developers, designers, innovators, creators and entrepreneurs of tomorrow. I_Hack is geared up for those who are passionate about building, designing and innovating. It is a one of its kind tech challenge. I_Hack comprises of 2 parallel tracks :</p>
+            <div class="row">
+                
+                <div class="col-lg-6 feature-box">
+                  <div class="card abtcrd">
+                    <div class="card-body">
+                      <br>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="abtimg" src="images/ai4.jpg" >
+                          </div>
+                          <div class="carousel-item">
+                            <img class="abtimg" src="images/ai2.jpg">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="abtimg" src="images/ai1.jpg">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="abtimg" src="images/ai3.jpg">
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                <!-- <img class="inimg" src="images/inspireimg.png"> -->
+                <div class="abtpara">
+                  <h3>TRUMINDS AI TRACK</h3>
+            <p>AI is poised to drive innovation by accelerating the development of new products. According to Elon Musk, robots will end up moving so fast that one will need a strobe light just to see them. We firmly believe that he might just be onto something great and are pleased to present the Truminds AI Track which will bring together innovative data scientists and developers from across the ecosystem to solve real world challenges by applying AI and machine learning. This track is sponsored by Truminds</p>
+          
+          <br>
+            <a href=""><button type="button" class="btn btn-dark btn-lg download-button"><i class="fas fa-tachometer-alt"></i> Go to Dashboard</button></a> 
+            <a href=""><button type="button" class="btn btn-dark btn-lg download-button"><i class="fas fa-diagnoses"></i>PROBLEM STATEMENT</button></a>      
+               </div>
+               </div>
+               </div>
+              </div>
+                <div class="col-lg-6 feature-box">
+                  <div class="card abtcrd">
+                    <div class="card-body">
+                      <br>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="abtimg" src="images/wipro4.jpg">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="abtimg" src="images/wipro1.jpg" >
+                          </div>
+                          <div class="carousel-item">
+                            <img class="abtimg" src="images/wipro2.jpg" >
+                          </div>
+                          <div class="carousel-item">
+                            <img class="abtimg" src="images/wipro3.jpg" >
+                          </div>
+                        </div>
+
+                      
+                      </div>
+                      <br>
+
+                      <div class="abtpara">
+                  <h3>WIPRO SOFTWARE TRACK, IN COLLABORATION WITH TOPCODER</h3>
+            <p>Can't control the geeky entrepreneurial side of yours? always wanted to build great tech and optimize things, but always were a little confused where to start with? We have something for you as well. The Software Track will have a pre-defined problem statement for which hackers will have to come up with their best solution in 30 hours and the most efficient and practical solution will be the winner. This track is sponsored by Wipro.</p>
+            <a href=""><button type="button" class="btn btn-dark btn-lg download-button"><i class="fas fa-chair"></i> REGISTER</button></a> 
+            <a href=""><button type="button" class="btn btn-dark btn-lg download-button"><i class="fas fa-diagnoses"></i>PROBLEM STATEMENT</button></a>      
+        </div>
+      </div>
+    </div>
+            </div>
+        </section>
+        <br>
+        <p class="text-center quote1"><b>“The fundamental criterion for judging any procedure is the justice of its likely results.”</b> ― John Rawls</p>
+        
+
+        <section id="cry">
+          <br>
+          <h1 class="text-center">JUDGING CRITERIA</h1>
+          <br>
+
+
+          <div class="row text-center">
+            <div class="col-lg-3 col-sm-6 pink">
+              <i class="fas fa-laptop-code fa-4x"></i><br>
+              <p>TECHNICAL APPROACH</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 red">
+              <i class="fas fa-recycle fa-4x"></i><br>
+              <p>REUSABILITY</p>    
+            </div>
+            <div class="col-lg-3 col-sm-6 blue">
+              <i class="fas fa-user fa-4x"></i><br>
+              <p>USER INTERFACE</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 grey">
+              <i class="fas fa-lock fa-4x"></i><br>
+              <p>SECURITY</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 green">
+              <i class="fas fa-tachometer-alt fa-4x"></i><br>
+              <p>PERFORMANCE</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 yellow">
+              <i class="fas fa-rupee-sign fa-4x"></i><br>
+              <p>BUSINESS VALUE TO BANK</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 purple">
+              <i class="fas fa-lightbulb fa-4x"></i><br>
+              <p>INNOVATION</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 orange">
+              <i class="fas fa-thumbs-up fa-4x"></i><br>
+              <p>ADOPTION OF SOLUTION</p>
+            </div>
+            
+          </div>
+          
+
+    
+        </section>
+        <br>
+        <p class="text-center quote1"><b>“<i>S</i>piritual <i>P</i>erson <i>O</i>ffering <i>N</i>ecessary <i>S</i>uggestions <i>O</i>n <i>R</i>ecovery.”</b> ― Gargre</p>
+
+
+
+        <section id="sponsors">
+          <br>
+          <h1 class="text-center">SPONSORS</h1>
+         
+
+          
+           <div class="row" >
+
+             <div class="col-lg-6 col-sm-6 sponsor-column">
+
+            
+
+               
+              <img class="spon" src="images/wiprob.png">
+
+            
+            </div>
+          
+            <div class="col-lg-6 col-sm-6 sponsor-column">
+              
+              <img class="spon" src="images/ruminds.png">
+            </div>
+          
+
+           </div>
+
+       
+          <br>
+        
+          <h1 class="text-center">HACKATHON PARTNERS</h1>
+          <br>
+          
+          <div class="row">
+            <div class="col-lg-3 col-sm-4 part-column">
+              <img class="partimg" src="images/dev.png">
+            </div>
+            <div class="col-lg-3 col-sm-4 part-column">
+              <img class="partimg" src="images/mat.png">
+            </div>
+            <div class="col-lg-3  col-sm-4 part-column">
+              <img class="partimg" src="images/portis.png">
+            </div>
+            <div class="col-lg-3  col-sm-4 part-column">
+              <img class="partimg" src="images/tenxgrowth.png">
+            </div>
+            <div class="col-lg-4  col-sm-4 part-column">
+              <img class="partimg" src="images/tez.png">
+            </div>
+            <div class="col-lg-4  col-sm-4 part-column">
+              <img class="partimg" src="images/Startupindia.png">
+            </div>
+            <div class=" col-lg-4   part-column">
+              <img class="partimg" src="images/IoTIOT..png">
+            </div>
+           
+          </div>
+
+          <div class="col-12 text-center" style="font-size: 20px; text-align: center">
+            <p href="#" class="" style="font-size: 20px">Interested in becoming a sponsor? E-mail us at</p><br>
+             <a href="" class="text-center text-decoration-none " style="color: #6674A3;">ihack@ecell.in</a>
+          </div>
+
+        <BR>
+          
+        </section>
+        <br>
+        <p class="text-center quote1"><b>“It takes a great man to be a good listener.”</b> ― Calvin Coolidge</p>
+        
+
+        <section id="team">
+          <br>
+          <h1 class="text-center">SPEAKERS & JUDGES</h1>
+          <br>
+          <div class="row text-center">
+            <div class="col-lg-4 col-sm-6 speak-column">
+              <img class="speakimg" src="images/sanjivk.jpg">
+              <br>
+              <p> <b>Sanjiv Kapoor</b>- CTO,Truminds</p>
+             
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speak-column">
+              <img  class="speakimg" src="images/shaktig.jpg">
+              <br>
+              <p> <b> Shakti Goap</b>- FOUNDER,Devfolio</p>
+            
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speak-column">
+              <img class="speakimg" src="images/shivak.jpg">
+              <br>
+              <p><b>Chetan Kabu</b>- VP Engineering,Truminds</p>
+              
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speak-column">
+              <img class="speakimg" src="images/graceg.jpg">
+              <br>
+              <p><b></b>Grace Guo</b>- Founding Team,Dunya labs</p>
+             
+            </div>
+
+            <div class="col-lg-3 col-sm-6 speak-column">
+              <img class="speakimg" src="images/kca.jpg">
+              <br>
+              <p><b>KC Ayyagari</b>- Program Manager , Google cloud</p>
+              
+            </div>
+            <br>
+            <br>
+
+            
+          </div>
+
+        </section> 
+        <br>
+        <p class="text-center quote1"><b>“Without a good question,a good answer has no pace to go.”</b> ― Clayton Christensen</p> 
+        
+
+
+
+        <!--timeline starts-->
+
+        
+
+        <section  id="timeline">
+          
+          <div class="ps-timeline-sec">
+            <br>
+          <h1 class="text-center eventhead" >EVENT SCHEDULE</h1>
+        <div class="container">
+            <ol class="ps-timeline">
+                <li>
+                    <div class="img-handler-top">
+                        <h1 class="timeh">2 FEB </h1>
+                    </div>
+                    <div class="ps-bot">
+                        <p class="timep">Release of problem statements on the i-Hack website</p>
+                    </div>
+                    <span class="ps-sp-top">01</span>
+                </li>
+               
+                <li>
+                    <div class="img-handler-bot">
+                        <h1 class="timeh">4 FEB</h1>
+                    </div>
+                    <div class="ps-top">
+                        <p class="timep">We start accepting submissions on Devfolio</p>
+                    </div>
+                    <span class="ps-sp-bot">02</span>
+                </li>
+                <li>
+                    <div class="img-handler-top">
+                        <h1 class="timeh">7 FEB</h1>
+                    </div>
+                    <div class="ps-bot">
+                        <p class="lefty timep">Submission Deadline</p>
+                    </div>
+                    <span class="ps-sp-top">03</span>
+                </li>
+                <li>
+                    <div class="img-handler-bot">
+                        <h1 class="timeh">8 FEB</h1>
+                    </div>
+                    <div class="ps-top">
+                        <p class="timep">Announcement of final results (top 3) post judging by Truminds officials.</p>
+                    </div>
+                    <span class="ps-sp-bot">04</span>
+                </li>
+            </ol>
+        </div>
+      </div>
+    </div>
+    </section>
+<!-- partial -->
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>  -->
+
+
+
+
+        <!--timline end-->
+
+
+        <section id="FAQS">
+
+          <br>
+          <h1 class="text-center">HAVE QUESTIONS?</h1>
+          <br>
+          <br>
+
+
+
+           <div class="container">
+            
+            
+             <div id="accordian">
+              <div class="card text-center">
+                <div class="card-header">
+                  <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    Who can attend?
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                  <div class="card-body faqans">
+                   Current students of any college of India as well as working professionals.
+                  </div>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-header">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                   Do we have to participate individually or in teams?
+                </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                  <div class="card-body faqans">
+                    Either way works. You can participate in the hackathon as an individual or in a team. However, the number of members in a team cannot exceed 4.
+                  </div>
+                </div>
+              </div>
+              <div class="card text-center">
+                 <div class="card-header">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                    How much does it cost?
+                  </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                  <div class="card-body faqans">
+                    This event is completely free! We’ll provide you with a plethora of resources and tools to hack with
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+        <br>
+        <div class="text-center">
+       <a style="color: black;" href="">Still have Queries? Contact us!</a>
+      </div>
+
+
+        </section>
+        
+
+
+        <footer id="footer">
+          <br>
+          <br>
+          
+        <div class="row text-center">
+          <div class="col-lg-4 col-sm-6 footbox">
+            <h4>CODE OF CONDUCT</h4>
+            <p>Still got some queries?</p>
+            <p>Contact Rishi Chauhan : +91-6264585254 Mail:rishi.chauhan@ecell.in</p>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 footbox">
+            <h4>FOLLOW US ON</h4>
+            <BR>
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-instagram-square fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
+          </div>
+          
+
+          <div class="col-lg-4 footbox">
+            <h4>QUICK LINKS</h4>
+            About I_Hack 
+            <BR>
+            Our Speakers & Judges
+            <BR>
+              Sponsors
+              <BR>
+                Partners
+                <BR>
+                  FAQs
+          </div>
+
+          <a href="#introduction">
+            <i class="fas fa-arrow-circle-up fa-4x " style="color:rgb(84, 235, 210);"></i>
+          </a>
+      
+
+          
+        </div>
+      
+        </footer>
+
+        
+        
+    </body>
+</html>
