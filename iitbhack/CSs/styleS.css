@@ -139,19 +139,18 @@
     color: black;
 }
 #sponsors{
-    /* background-color: rgb(247, 166, 109);
-    color: white; */
-    background-image: url('../images/simplebg.jpg');
-    background-size: cover;
-    background-position: center;
+   background-color: coral;
     text-align: center;
+    padding: 3% 2%;
 }
 i{
     font-weight: 400;
 }   
  
 .sponsor-column{
-    padding: 3% 2%;
+    
+    padding-top:10px;
+    padding-bottom: 10px;
   }
 .feature-box{
     padding: 3% 2%;
@@ -166,6 +165,7 @@ i{
 .partimg{
     height: 100px;
     width: 200px;
+   
 }
 .part-column{
     padding: 3% 2%; 
@@ -184,9 +184,8 @@ i{
     padding: 3% 2%;  
 }
 #FAQS{
-    background-image: url('../images/eye.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: darkgray;
+    
     /* background-color: chocolate; */
     padding-bottom: 40px;
     color: white;
@@ -205,5 +204,16 @@ i{
     color: white;
     padding-bottom: 20px;
 }
+
+#cry{
+    padding: 0% 2%; 
+}
+
+
+
+
+
+
+
 
 
